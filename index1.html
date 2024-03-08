@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Editor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <header>
+        <div id ="bttn" style="center">
+                <button style="font-weight: bold;" title="bold" onclick="boldtext()">B</button>
+                <button style="text-decoration: underline;" title="underline" onclick="underlinetext()">U</button>
+                <button style="font-style: italic;" title="italic" onclick="italictext()">I</button>
+                <button id="colorbttn" title="color" onclick="colortext()">A</button><input type="color"
+                id="colorselect" title="color">
+                <button title="align left" onclick="textalignleft()"><img src="image/left.png" alt="left"></button>
+                <button title="align center" onclick="textaligncenter()"><img src="image/center.png" alt="center"></button>
+                <button title="align right" onclick="textalignright()"><img src="image/right.png" alt="right"></button>
+                <button title="align justify" onclick="textalignjustify()"><img src="image/justify.png" alt="justify"></button>
+                <button title="undo" onclick="undo()"><img src="image/undo.png" alt="undo"></button>
+                <button title="redo" onclick="redo()"><img src="image/redo.png" alt="redo"></button>
+        </div>
+    </header>
+
+    <main>
+        <div id="text" contenteditable="true" autofocus onblur="this.focus()">
+            Enter your text here
+        </div>
+    </main>
+
+    <script src="index1.js"></script>
+</body>
+</html>
